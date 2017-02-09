@@ -28734,7 +28734,6 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="C25" library="rcl" deviceset="C-US" device="C0805" value="100nF"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="SJ1" library="jumper" deviceset="SJ" device=""/>
 <part name="U2" library="SparkFun-DigitalIC" deviceset="74HC04_HEX_INVERTER" device="SOIC"/>
 <part name="JP1" library="SparkFun-Connectors" deviceset="M03X2" device="SHROUD"/>
 <part name="C4" library="resistor" deviceset="CPOL-US" device="E5-5"/>
@@ -29120,7 +29119,6 @@ noise on the regulator output..."</text>
 <instance part="GND2" gate="1" x="652.78" y="33.02"/>
 <instance part="C25" gate="G$1" x="685.8" y="48.26"/>
 <instance part="GND3" gate="1" x="685.8" y="40.64"/>
-<instance part="SJ1" gate="1" x="63.5" y="172.72"/>
 <instance part="U2" gate="G$1" x="238.76" y="50.8"/>
 <instance part="JP1" gate="G$1" x="53.34" y="12.7"/>
 <instance part="C4" gate="G$1" x="68.58" y="363.22"/>
@@ -29907,9 +29905,6 @@ noise on the regulator output..."</text>
 <pinref part="U1" gate="G$1" pin="AVCC"/>
 <wire x1="71.12" y1="182.88" x2="58.42" y2="182.88" width="0.1524" layer="91"/>
 <junction x="58.42" y="182.88"/>
-<wire x1="58.42" y1="172.72" x2="58.42" y2="177.8" width="0.1524" layer="91"/>
-<junction x="58.42" y="177.8"/>
-<pinref part="SJ1" gate="1" pin="1"/>
 <wire x1="58.42" y1="185.42" x2="60.96" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="185.42" x2="60.96" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="190.5" x2="58.42" y2="190.5" width="0.1524" layer="91"/>
@@ -30689,13 +30684,6 @@ noise on the regulator output..."</text>
 <wire x1="464.82" y1="48.26" x2="500.38" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="U$20" gate="G$1" pin="SW2"/>
 <label x="472.44" y="48.26" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$25" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="AREF"/>
-<wire x1="71.12" y1="172.72" x2="68.58" y2="172.72" width="0.1524" layer="91"/>
-<pinref part="SJ1" gate="1" pin="2"/>
 </segment>
 </net>
 <net name="N$29" class="0">
