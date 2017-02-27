@@ -9269,6 +9269,33 @@ Source: 008-0260-0_E.pdf</description>
 <text x="-2.81" y="10.67" size="1.27" layer="25" font="vector">&gt;NAME</text>
 <text x="-3.31" y="-1.73" size="1.27" layer="27" font="vector">&gt;VALUE</text>
 </package>
+<package name="SOT23-5L">
+<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;&lt;p&gt;
+package type OT</description>
+<wire x1="1.422" y1="0.81" x2="1.422" y2="-0.81" width="0.1524" layer="21"/>
+<wire x1="1.422" y1="-0.81" x2="-1.422" y2="-0.81" width="0.1524" layer="51"/>
+<wire x1="-1.422" y1="-0.81" x2="-1.422" y2="0.81" width="0.1524" layer="21"/>
+<wire x1="-1.422" y1="0.81" x2="1.422" y2="0.81" width="0.1524" layer="51"/>
+<wire x1="-0.522" y1="0.81" x2="0.522" y2="0.81" width="0.1524" layer="21"/>
+<wire x1="-0.428" y1="-0.81" x2="-0.522" y2="-0.81" width="0.1524" layer="21"/>
+<wire x1="0.522" y1="-0.81" x2="0.428" y2="-0.81" width="0.1524" layer="21"/>
+<wire x1="-1.328" y1="-0.81" x2="-1.422" y2="-0.81" width="0.1524" layer="21"/>
+<wire x1="1.422" y1="-0.81" x2="1.328" y2="-0.81" width="0.1524" layer="21"/>
+<wire x1="1.328" y1="0.81" x2="1.422" y2="0.81" width="0.1524" layer="21"/>
+<wire x1="-1.422" y1="0.81" x2="-1.328" y2="0.81" width="0.1524" layer="21"/>
+<smd name="1" x="-0.95" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="2" x="0" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="3" x="0.95" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="4" x="0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="5" x="-0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
+<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.429" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.2" y1="-1.5" x2="-0.7" y2="-0.85" layer="51"/>
+<rectangle x1="-0.25" y1="-1.5" x2="0.25" y2="-0.85" layer="51"/>
+<rectangle x1="0.7" y1="-1.5" x2="1.2" y2="-0.85" layer="51"/>
+<rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.5" layer="51"/>
+<rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.5" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LED">
@@ -9358,6 +9385,17 @@ Source: 008-0260-0_E.pdf</description>
 <pin name="VBUS" x="10.16" y="5.08" visible="pin" length="short" direction="pwr" rot="R180"/>
 <pin name="GND" x="10.16" y="-5.08" visible="pin" length="short" direction="pwr" rot="R180"/>
 <pin name="ID" x="10.16" y="-2.54" visible="pin" length="short" rot="R180"/>
+</symbol>
+<symbol name="ESDTUDOR">
+<pin name="1" x="-10.16" y="5.08" length="middle"/>
+<pin name="GND" x="-10.16" y="0" length="middle"/>
+<pin name="3" x="-10.16" y="-5.08" length="middle"/>
+<pin name="4" x="10.16" y="-2.54" length="middle" rot="R180"/>
+<pin name="5" x="10.16" y="2.54" length="middle" rot="R180"/>
+<wire x1="-5.08" y1="-7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -10086,6 +10124,26 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="ID" pad="ID"/>
 <connect gate="G$1" pin="VBUS" pad="VBUS"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ESDTUDOR">
+<description>x</description>
+<gates>
+<gate name="G$1" symbol="ESDTUDOR" x="-22.86" y="-15.24"/>
+</gates>
+<devices>
+<device name="" package="SOT23-5L">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="GND" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -30153,6 +30211,9 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="P+16" library="supply1" deviceset="+5V" device=""/>
 <part name="GND39" library="supply1" deviceset="GND" device=""/>
 <part name="D7" library="diode" deviceset="ZENER-DIODE" device="DO41Z10"/>
+<part name="C52" library="rcl" deviceset="C-US" device="C0805" value="100nF"/>
+<part name="GND90" library="supply1" deviceset="GND" device=""/>
+<part name="U$23" library="adafruit" deviceset="ESDTUDOR" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -30223,6 +30284,7 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <text x="35.56" y="304.8" size="1.778" layer="91">"Connecting a 22nF between
 the BP pin and GND pin significantly reduces
 noise on the regulator output..."</text>
+<text x="424.18" y="205.74" size="1.778" layer="91">run length-freq-ri</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="93.98" y="162.56"/>
@@ -30555,6 +30617,9 @@ noise on the regulator output..."</text>
 <instance part="P+16" gate="1" x="154.94" y="276.86"/>
 <instance part="GND39" gate="1" x="129.54" y="271.78"/>
 <instance part="D7" gate="G$1" x="142.24" y="274.32"/>
+<instance part="C52" gate="G$1" x="281.94" y="269.24"/>
+<instance part="GND90" gate="1" x="281.94" y="261.62"/>
+<instance part="U$23" gate="G$1" x="388.62" y="132.08"/>
 </instances>
 <busses>
 </busses>
@@ -31104,6 +31169,10 @@ noise on the regulator output..."</text>
 <wire x1="139.7" y1="274.32" x2="129.54" y2="274.32" width="0.1524" layer="91"/>
 <pinref part="D7" gate="G$1" pin="A"/>
 </segment>
+<segment>
+<pinref part="C52" gate="G$1" pin="2"/>
+<pinref part="GND90" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="+5V" class="0">
 <segment>
@@ -31459,7 +31528,7 @@ noise on the regulator output..."</text>
 <label x="596.9" y="35.56" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="UBLOX_DPLUS" class="0">
+<net name="USB_NEO_DPLUS_A" class="0">
 <segment>
 <wire x1="266.7" y1="266.7" x2="261.62" y2="266.7" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="6_USB_DP"/>
@@ -31470,7 +31539,7 @@ noise on the regulator output..."</text>
 <pinref part="R2" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="UBLOX_DMINUS" class="0">
+<net name="USB_NEO_DMINUS_A" class="0">
 <segment>
 <wire x1="266.7" y1="261.62" x2="261.62" y2="261.62" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="5_USB_DM"/>
@@ -31659,7 +31728,7 @@ noise on the regulator output..."</text>
 <wire x1="614.68" y1="266.7" x2="617.22" y2="266.7" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="DPLUS_NEO_END" class="0">
+<net name="USB_NEO_DPLUS_B" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="223.52" y1="309.88" x2="233.68" y2="309.88" width="0.1524" layer="91"/>
@@ -31671,7 +31740,7 @@ noise on the regulator output..."</text>
 <label x="497.84" y="139.7" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="DMINUS_NEO_END" class="0">
+<net name="USB_NEO_DMINUS_B" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="223.52" y1="307.34" x2="233.68" y2="307.34" width="0.1524" layer="91"/>
@@ -31979,7 +32048,7 @@ noise on the regulator output..."</text>
 <label x="325.12" y="139.7" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$37" class="0">
+<net name="USB_ASP_DPLUS_B" class="0">
 <segment>
 <pinref part="R19" gate="G$1" pin="1"/>
 <wire x1="86.36" y1="27.94" x2="91.44" y2="27.94" width="0.1524" layer="91"/>
@@ -31994,7 +32063,7 @@ noise on the regulator output..."</text>
 <pinref part="U4" gate="G$1" pin="PB1(OC1A)"/>
 </segment>
 </net>
-<net name="N$38" class="0">
+<net name="USB_ASP_DMINUS_B" class="0">
 <segment>
 <pinref part="R18" gate="G$1" pin="1"/>
 <wire x1="86.36" y1="25.4" x2="96.52" y2="25.4" width="0.1524" layer="91"/>
@@ -32154,7 +32223,7 @@ noise on the regulator output..."</text>
 <label x="187.96" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="FT-DPLUS" class="0">
+<net name="USB_FT_DPLUS_B" class="0">
 <segment>
 <pinref part="C34" gate="G$1" pin="1"/>
 <wire x1="624.84" y1="139.7" x2="632.46" y2="139.7" width="0.1524" layer="91"/>
@@ -32167,7 +32236,7 @@ noise on the regulator output..."</text>
 <label x="505.46" y="175.26" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="FT-DMINUS" class="0">
+<net name="USB_FT_DMINUS_B" class="0">
 <segment>
 <wire x1="609.6" y1="142.24" x2="617.22" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="C33" gate="G$1" pin="1"/>
@@ -32181,7 +32250,7 @@ noise on the regulator output..."</text>
 <pinref part="U5" gate="A" pin="DM2"/>
 </segment>
 </net>
-<net name="FT_DM" class="0">
+<net name="USB_FT_DMINUS_A" class="0">
 <segment>
 <wire x1="645.16" y1="142.24" x2="650.24" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="RN2" gate="B" pin="2"/>
@@ -32193,7 +32262,7 @@ noise on the regulator output..."</text>
 <label x="586.74" y="177.8" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="FT_DP" class="0">
+<net name="USB_FT_DPLUS_A" class="0">
 <segment>
 <wire x1="642.62" y1="139.7" x2="650.24" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="RN2" gate="A" pin="2"/>
@@ -32219,7 +32288,7 @@ noise on the regulator output..."</text>
 <wire x1="200.66" y1="360.68" x2="198.12" y2="360.68" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="DPLUS_ASP" class="0">
+<net name="USB_ASP_DPLUS_A" class="0">
 <segment>
 <wire x1="101.6" y1="27.94" x2="119.38" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="R19" gate="G$1" pin="2"/>
@@ -32233,7 +32302,7 @@ noise on the regulator output..."</text>
 <label x="497.84" y="193.04" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="DMINUS_ASP" class="0">
+<net name="USB_ASP_DMINUS_A" class="0">
 <segment>
 <pinref part="R18" gate="G$1" pin="2"/>
 <pinref part="R17" gate="G$1" pin="2"/>
@@ -32250,7 +32319,7 @@ noise on the regulator output..."</text>
 <label x="497.84" y="195.58" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="DPLUS_HUB" class="0">
+<net name="USB_HUB_DPLUS_A" class="0">
 <segment>
 <wire x1="421.64" y1="165.1" x2="444.5" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="U5" gate="A" pin="DP0"/>
@@ -32261,7 +32330,7 @@ noise on the regulator output..."</text>
 <label x="403.86" y="160.02" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="DMINUS_HUB" class="0">
+<net name="USB_HUB_DMINUS_A" class="0">
 <segment>
 <wire x1="431.8" y1="167.64" x2="444.5" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="U5" gate="A" pin="DM0"/>
@@ -32377,9 +32446,12 @@ noise on the regulator output..."</text>
 <pinref part="U5" gate="A" pin="BUSPWR"/>
 </segment>
 <segment>
-<wire x1="264.16" y1="271.78" x2="261.62" y2="271.78" width="0.1524" layer="91"/>
+<wire x1="307.34" y1="271.78" x2="281.94" y2="271.78" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="7_VDDUSB"/>
 <label x="261.62" y="271.78" size="1.778" layer="95"/>
+<pinref part="C52" gate="G$1" pin="1"/>
+<wire x1="281.94" y1="271.78" x2="261.62" y2="271.78" width="0.1524" layer="91"/>
+<junction x="281.94" y="271.78"/>
 </segment>
 <segment>
 <wire x1="419.1" y1="254" x2="411.48" y2="254" width="0.1524" layer="91"/>
@@ -32408,7 +32480,7 @@ noise on the regulator output..."</text>
 <pinref part="WP8" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="TUSB_DMINUS_POSTRES" class="0">
+<net name="USB_HUB_DMINUS_B" class="0">
 <segment>
 <wire x1="114.3" y1="81.28" x2="134.62" y2="81.28" width="0.1524" layer="91"/>
 <label x="124.46" y="81.28" size="1.778" layer="95"/>
@@ -32423,7 +32495,7 @@ noise on the regulator output..."</text>
 <pinref part="CN1" gate="G$1" pin="D-"/>
 </segment>
 </net>
-<net name="TUSB_DPLUS_POSTRES" class="0">
+<net name="USB_HUB_DPLUS_B" class="0">
 <segment>
 <wire x1="124.46" y1="83.82" x2="134.62" y2="83.82" width="0.1524" layer="91"/>
 <label x="124.46" y="83.82" size="1.778" layer="95"/>
@@ -32474,7 +32546,7 @@ noise on the regulator output..."</text>
 <junction x="426.72" y="177.8"/>
 </segment>
 </net>
-<net name="CP_DMINUS_TI" class="0">
+<net name="USB_CP_DMINUS_A" class="0">
 <segment>
 <wire x1="408.94" y1="279.4" x2="429.26" y2="279.4" width="0.1524" layer="91"/>
 <pinref part="U$11" gate="G$1" pin="D-"/>
@@ -32486,7 +32558,7 @@ noise on the regulator output..."</text>
 <label x="497.84" y="160.02" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CP_DPLUS_TI" class="0">
+<net name="USB_CP_DPLUS_A" class="0">
 <segment>
 <wire x1="408.94" y1="284.48" x2="429.26" y2="284.48" width="0.1524" layer="91"/>
 <pinref part="U$11" gate="G$1" pin="D+"/>

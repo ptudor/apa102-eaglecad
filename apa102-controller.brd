@@ -213,7 +213,8 @@ ptudor.net</text>
 <wire x1="3.175" y1="0" x2="0" y2="3.175" width="0" layer="20" curve="-90"/>
 <wire x1="0" y1="3.175" x2="0" y2="72.771" width="0" layer="20"/>
 <wire x1="0" y1="72.771" x2="3.175" y2="75.946" width="0" layer="20" curve="-90"/>
-<text x="80.01" y="66.04" size="1.016" layer="21" font="vector" ratio="15" rot="R270" align="center-right">27nH</text>
+<text x="81.915" y="70.866" size="1.016" layer="21" font="vector" ratio="15" rot="R270" align="center-right">27
+nH</text>
 <text x="74.93" y="22.098" size="1.27" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-center">1"x.75</text>
 <text x="5.207" y="2.032" size="1.27" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-center">.25"x3.5"</text>
 <text x="5.461" y="72.517" size="1.27" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-center">2.75"x3.5</text>
@@ -230,7 +231,7 @@ ptudor.net</text>
 <text x="89.916" y="29.337" size="1.4224" layer="22" font="vector" ratio="15" rot="SMR0" align="center">5V</text>
 <text x="84.963" y="25.4" size="1.4224" layer="22" font="vector" ratio="15" rot="SMR0" align="center">Co</text>
 <text x="90.043" y="21.59" size="1.4224" layer="22" font="vector" ratio="15" rot="SMR0" align="center">Do</text>
-<text x="76.581" y="64.008" size="1.016" layer="21" font="vector" ratio="15" rot="R270" align="center-right">10R</text>
+<text x="79.248" y="68.072" size="1.016" layer="21" font="vector" ratio="15" rot="R270" align="center-right">10R</text>
 <text x="77.47" y="55.753" size="1.016" layer="21" font="vector" ratio="15" rot="R270" align="center-right">27</text>
 <text x="58.547" y="52.959" size="1.016" layer="21" font="vector" ratio="15" rot="R270" align="center-right">100n</text>
 <text x="52.959" y="53.721" size="1.016" layer="21" font="vector" ratio="15" rot="R270" align="center-right">1u</text>
@@ -293,7 +294,7 @@ ASP</text>
 <text x="35.052" y="22.987" size="1.016" layer="21" font="vector" ratio="15" rot="R270" align="center-right">22p</text>
 <text x="35.052" y="27.432" size="1.016" layer="21" font="vector" ratio="15" rot="R270" align="center-right">22p</text>
 <text x="20.447" y="1.27" size="1.016" layer="21" font="vector" ratio="15" align="center">DISCONNECT LED POWER BEFORE PROGRAMMING</text>
-<text x="73.787" y="74.168" size="1.016" layer="21" font="vector" ratio="15" align="center">Program as Arduino Nano via USBASP
+<text x="69.977" y="74.168" size="1.016" layer="21" font="vector" ratio="15" align="center">Program as Arduino Nano via USBASP
 APA102 Controller on MOSI and SCK</text>
 <text x="11.557" y="51.689" size="1.016" layer="22" font="vector" ratio="15" rot="MR270" align="center-right">Tx</text>
 <text x="11.557" y="58.801" size="1.016" layer="22" font="vector" ratio="15" rot="MR270" align="center-right">Rx</text>
@@ -448,6 +449,7 @@ INT1: ALPS</text>
 <rectangle x1="11.557" y1="40.513" x2="12.827" y2="41.783" layer="21"/>
 <rectangle x1="32.766" y1="47.244" x2="34.036" y2="48.514" layer="21"/>
 <text x="75.057" y="6.35" size="1.016" layer="21" font="vector" ratio="15" rot="R270" align="center-right">1N4733 5.1Z</text>
+<text x="76.962" y="65.913" size="1.016" layer="21" font="vector" ratio="15" rot="R270" align="center-right">100n</text>
 </plain>
 <libraries>
 <library name="SparkFun-Connectors">
@@ -1950,6 +1952,33 @@ Source: http://www.osram.convergy.de/ ... lb_r99a.pdf</description>
 <text x="-3.31" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
 <hole x="-2.2" y="1" drill="1"/>
 <hole x="2.2" y="1" drill="1"/>
+</package>
+<package name="SOT23-5L">
+<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;&lt;p&gt;
+package type OT</description>
+<wire x1="1.422" y1="0.81" x2="1.422" y2="-0.81" width="0.1524" layer="21"/>
+<wire x1="1.422" y1="-0.81" x2="-1.422" y2="-0.81" width="0.1524" layer="51"/>
+<wire x1="-1.422" y1="-0.81" x2="-1.422" y2="0.81" width="0.1524" layer="21"/>
+<wire x1="-1.422" y1="0.81" x2="1.422" y2="0.81" width="0.1524" layer="51"/>
+<wire x1="-0.522" y1="0.81" x2="0.522" y2="0.81" width="0.1524" layer="21"/>
+<wire x1="-0.428" y1="-0.81" x2="-0.522" y2="-0.81" width="0.1524" layer="21"/>
+<wire x1="0.522" y1="-0.81" x2="0.428" y2="-0.81" width="0.1524" layer="21"/>
+<wire x1="-1.328" y1="-0.81" x2="-1.422" y2="-0.81" width="0.1524" layer="21"/>
+<wire x1="1.422" y1="-0.81" x2="1.328" y2="-0.81" width="0.1524" layer="21"/>
+<wire x1="1.328" y1="0.81" x2="1.422" y2="0.81" width="0.1524" layer="21"/>
+<wire x1="-1.422" y1="0.81" x2="-1.328" y2="0.81" width="0.1524" layer="21"/>
+<smd name="1" x="-0.95" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="2" x="0" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="3" x="0.95" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="4" x="0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="5" x="-0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
+<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.429" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.2" y1="-1.5" x2="-0.7" y2="-0.85" layer="51"/>
+<rectangle x1="-0.25" y1="-1.5" x2="0.25" y2="-0.85" layer="51"/>
+<rectangle x1="0.7" y1="-1.5" x2="1.2" y2="-0.85" layer="51"/>
+<rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.5" layer="51"/>
+<rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.5" layer="51"/>
 </package>
 </packages>
 </library>
@@ -12981,9 +13010,9 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="58.42" y="46.863" size="1.27" layer="27" rot="R90"/>
 <attribute name="VALUE" x="62.23" y="46.863" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R12" library="rcl" package="R0805" value="10" x="78.105" y="65.405" smashed="yes" rot="R270">
-<attribute name="NAME" x="77.47" y="86.36" size="1.27" layer="25" rot="R270"/>
-<attribute name="VALUE" x="75.565" y="66.04" size="1.27" layer="27" rot="R270"/>
+<element name="R12" library="rcl" package="R0805" value="10" x="79.375" y="65.405" smashed="yes" rot="R270">
+<attribute name="NAME" x="78.74" y="86.36" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="76.835" y="66.04" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="L1" library="mini1284" package="M0805" value="27nH" x="81.915" y="67.945" smashed="yes" rot="R270">
 <attribute name="NAME" x="82.145" y="78.335" size="0.8128" layer="25" ratio="16" rot="R270"/>
@@ -13488,6 +13517,8 @@ Please make sure your boards conform to these design rules.</description>
 <element name="LED12" library="adafruit" package="CHIP-LED0805" value="CBUS1" x="33.02" y="33.02" rot="R180"/>
 <element name="R28" library="rcl" package="R0805" value="1k" x="33.02" y="38.1" rot="R90"/>
 <element name="D7" library="diode" package="DO41Z10" value="" x="73.025" y="8.89" rot="R270"/>
+<element name="C52" library="rcl" package="C0805" value="100nF" x="77.343" y="63.881" rot="R90"/>
+<element name="U$23" library="adafruit" package="SOT23-5L" value="ESDTUDOR" x="19.177" y="28.575" rot="R180"/>
 </elements>
 <signals>
 <signal name="ARD_SCK">
@@ -13629,7 +13660,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="36.515" y1="32.07" x2="36.195" y2="31.75" width="0.3048" layer="1"/>
 <via x="34.925" y="57.785" extent="1-16" drill="0.4572"/>
 <via x="43.18" y="60.198" extent="1-16" drill="0.4572"/>
-<via x="56.769" y="74.676" extent="1-16" drill="0.4064"/>
+<via x="61.214" y="74.676" extent="1-16" drill="0.4064"/>
 <wire x1="34.925" y1="54.544" x2="34.925" y2="57.785" width="0.3048" layer="1"/>
 <wire x1="60.44" y1="71.64" x2="60.325" y2="71.755" width="0.3048" layer="1"/>
 <wire x1="61.075" y1="56.1" x2="61.075" y2="54.725" width="0.254" layer="1"/>
@@ -13743,9 +13774,9 @@ Please make sure your boards conform to these design rules.</description>
 <via x="91.44" y="68.961" extent="1-16" drill="0.4064"/>
 <via x="87.63" y="72.39" extent="1-16" drill="0.4064"/>
 <via x="53.34" y="74.93" extent="1-16" drill="0.4064"/>
-<via x="58.42" y="73.025" extent="1-16" drill="0.4064"/>
-<via x="65.151" y="74.295" extent="1-16" drill="0.4064"/>
-<via x="74.93" y="74.295" extent="1-16" drill="0.4064"/>
+<via x="59.055" y="72.39" extent="1-16" drill="0.4064"/>
+<via x="70.866" y="74.295" extent="1-16" drill="0.4064"/>
+<via x="75.565" y="74.295" extent="1-16" drill="0.4064"/>
 <via x="51.435" y="63.5" extent="1-16" drill="0.4064"/>
 <via x="57.15" y="57.785" extent="1-16" drill="0.4064"/>
 <via x="57.404" y="61.976" extent="1-16" drill="0.4064"/>
@@ -14019,6 +14050,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="56.007" y1="69.85" x2="56.261" y2="69.596" width="0.254" layer="1"/>
 <wire x1="56.261" y1="69.596" x2="56.261" y2="68.514" width="0.254" layer="1"/>
 <contactref element="D7" pad="A"/>
+<contactref element="C52" pad="2"/>
 </signal>
 <signal name="+5V">
 <contactref element="U1" pad="6"/>
@@ -14394,13 +14426,13 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="40.894" y1="50.8" x2="40.894" y2="52.451" width="0.3048" layer="1"/>
 <wire x1="40.894" y1="52.451" x2="40.64" y2="52.705" width="0.3048" layer="1"/>
 </signal>
-<signal name="UBLOX_DPLUS">
+<signal name="USB_NEO_DPLUS_A">
 <contactref element="U$2" pad="6_USB_DP"/>
 <contactref element="R2" pad="2"/>
 <wire x1="73.075" y1="61.6" x2="79.192" y2="61.6" width="0.254" layer="1"/>
 <wire x1="79.192" y1="61.6" x2="79.375" y2="61.148" width="0.254" layer="1"/>
 </signal>
-<signal name="UBLOX_DMINUS">
+<signal name="USB_NEO_DMINUS_A">
 <contactref element="U$2" pad="5_USB_DM"/>
 <contactref element="R5" pad="2"/>
 <wire x1="73.075" y1="60.5" x2="77.102" y2="60.5" width="0.254" layer="1"/>
@@ -14465,14 +14497,14 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U$11" pad="24"/>
 <wire x1="41.91" y1="48.895" x2="36.195" y2="48.895" width="0.3048" layer="16"/>
 <wire x1="13.621" y1="55.265" x2="13.355" y2="55.265" width="0.254" layer="1"/>
-<wire x1="13.355" y1="55.265" x2="12.954" y2="54.864" width="0.254" layer="1"/>
-<wire x1="12.954" y1="54.864" x2="12.954" y2="51.435" width="0.254" layer="1"/>
-<via x="12.954" y="51.435" extent="1-16" drill="0.4572"/>
+<wire x1="13.355" y1="55.265" x2="13.208" y2="55.118" width="0.254" layer="1"/>
+<wire x1="13.208" y1="55.118" x2="13.208" y2="51.435" width="0.254" layer="1"/>
+<via x="13.208" y="51.435" extent="1-16" drill="0.4572"/>
 <wire x1="28.575" y1="52.01" x2="28.575" y2="50.8" width="0.254" layer="1"/>
 <wire x1="28.575" y1="50.8" x2="29.21" y2="50.165" width="0.254" layer="1"/>
 <via x="29.21" y="50.165" extent="1-16" drill="0.4572"/>
-<wire x1="29.21" y1="50.165" x2="14.224" y2="50.165" width="0.254" layer="16"/>
-<wire x1="14.224" y1="50.165" x2="12.954" y2="51.435" width="0.254" layer="16"/>
+<wire x1="29.21" y1="50.165" x2="14.478" y2="50.165" width="0.254" layer="16"/>
+<wire x1="14.478" y1="50.165" x2="13.208" y2="51.435" width="0.254" layer="16"/>
 <wire x1="29.21" y1="50.165" x2="34.925" y2="50.165" width="0.3048" layer="16"/>
 <wire x1="34.925" y1="50.165" x2="36.195" y2="48.895" width="0.3048" layer="16"/>
 <wire x1="43.815" y1="48.58" x2="42.225" y2="48.58" width="0.3048" layer="1"/>
@@ -14601,38 +14633,38 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="11.745" y1="66.355" x2="10.16" y2="64.77" width="0.2032" layer="1"/>
 <wire x1="10.16" y1="64.77" x2="10.16" y2="64.844" width="0.3048" layer="1"/>
 </signal>
-<signal name="DPLUS_NEO_END">
+<signal name="USB_NEO_DPLUS_B">
 <contactref element="R2" pad="1"/>
 <contactref element="U5" pad="24"/>
 <wire x1="79.375" y1="59.248" x2="79.375" y2="57.15" width="0.254" layer="1"/>
 <via x="79.375" y="57.15" extent="1-16" drill="0.4572"/>
-<via x="10.795" y="49.276" extent="1-16" drill="0.4572"/>
+<via x="11.176" y="49.276" extent="1-16" drill="0.4572"/>
 <wire x1="79.375" y1="57.15" x2="79.375" y2="55.88" width="0.254" layer="16"/>
 <wire x1="79.375" y1="55.88" x2="80.645" y2="54.61" width="0.254" layer="16"/>
 <wire x1="80.645" y1="54.61" x2="80.645" y2="46.99" width="0.254" layer="16"/>
 <wire x1="80.645" y1="46.99" x2="78.74" y2="45.085" width="0.254" layer="16"/>
-<wire x1="78.74" y1="45.085" x2="11.43" y2="45.085" width="0.254" layer="16"/>
-<wire x1="10.795" y1="49.276" x2="10.795" y2="45.72" width="0.254" layer="16"/>
-<wire x1="10.795" y1="45.72" x2="11.43" y2="45.085" width="0.254" layer="16"/>
-<wire x1="12.065" y1="48.1838" x2="12.065" y2="48.26" width="0.254" layer="1"/>
-<wire x1="12.065" y1="48.26" x2="11.811" y2="48.26" width="0.254" layer="1"/>
-<wire x1="11.811" y1="48.26" x2="10.795" y2="49.276" width="0.254" layer="1"/>
+<wire x1="78.74" y1="45.085" x2="11.811" y2="45.085" width="0.254" layer="16"/>
+<wire x1="11.176" y1="49.276" x2="11.176" y2="45.72" width="0.254" layer="16"/>
+<wire x1="11.176" y1="45.72" x2="11.811" y2="45.085" width="0.254" layer="16"/>
+<wire x1="12.065" y1="48.1838" x2="12.065" y2="48.895" width="0.254" layer="1"/>
+<wire x1="12.065" y1="48.895" x2="11.684" y2="49.276" width="0.254" layer="1"/>
+<wire x1="11.176" y1="49.276" x2="11.684" y2="49.276" width="0.254" layer="1"/>
 </signal>
-<signal name="DMINUS_NEO_END">
+<signal name="USB_NEO_DMINUS_B">
 <contactref element="R5" pad="1"/>
 <contactref element="U5" pad="23"/>
 <via x="77.47" y="56.515" extent="1-16" drill="0.4572"/>
 <wire x1="77.343" y1="58.359" x2="77.343" y2="56.642" width="0.254" layer="1"/>
 <wire x1="77.343" y1="56.642" x2="77.47" y2="56.515" width="0.254" layer="1"/>
-<via x="12.065" y="50.292" extent="1-16" drill="0.4572"/>
+<via x="12.065" y="51.562" extent="1-16" drill="0.4572"/>
 <wire x1="77.47" y1="56.515" x2="80.01" y2="53.975" width="0.254" layer="16"/>
 <wire x1="80.01" y1="53.975" x2="80.01" y2="47.117" width="0.254" layer="16"/>
 <wire x1="80.01" y1="47.117" x2="78.613" y2="45.72" width="0.254" layer="16"/>
 <wire x1="78.613" y1="45.72" x2="12.7" y2="45.72" width="0.254" layer="16"/>
 <wire x1="12.7" y1="45.72" x2="12.065" y2="46.355" width="0.254" layer="16"/>
-<wire x1="12.065" y1="46.355" x2="12.065" y2="50.292" width="0.254" layer="16"/>
-<wire x1="12.8524" y1="48.1838" x2="12.8524" y2="49.5046" width="0.254" layer="1"/>
-<wire x1="12.8524" y1="49.5046" x2="12.065" y2="50.292" width="0.254" layer="1"/>
+<wire x1="12.065" y1="46.355" x2="12.065" y2="51.562" width="0.254" layer="16"/>
+<wire x1="12.8524" y1="48.1838" x2="12.8524" y2="50.7746" width="0.254" layer="1"/>
+<wire x1="12.8524" y1="50.7746" x2="12.065" y2="51.562" width="0.254" layer="1"/>
 </signal>
 <signal name="GPS_SCL">
 <contactref element="U$2" pad="19_SCL2"/>
@@ -14716,8 +14748,8 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U$2" pad="9_VCC_RF"/>
 <contactref element="R12" pad="1"/>
 <wire x1="73.075" y1="66.8" x2="75.565" y2="66.8" width="0.3048" layer="1"/>
-<wire x1="75.565" y1="66.8" x2="77.914" y2="66.8" width="0.3048" layer="1"/>
-<wire x1="77.914" y1="66.8" x2="78.105" y2="66.355" width="0.3048" layer="1"/>
+<wire x1="75.565" y1="66.8" x2="79.184" y2="66.8" width="0.3048" layer="1"/>
+<wire x1="79.184" y1="66.8" x2="79.375" y2="66.355" width="0.3048" layer="1"/>
 <contactref element="U$2" pad="8_RESERVED"/>
 <wire x1="73.075" y1="65.7" x2="74.465" y2="65.7" width="0.254" layer="1"/>
 <wire x1="74.465" y1="65.7" x2="75.565" y2="66.8" width="0.254" layer="1"/>
@@ -14726,8 +14758,8 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="R12" pad="2"/>
 <contactref element="L1" pad="2"/>
 <contactref element="C23" pad="1"/>
-<wire x1="81.915" y1="64.704" x2="78.11" y2="64.704" width="0.3048" layer="1"/>
-<wire x1="78.11" y1="64.704" x2="78.105" y2="64.455" width="0.3048" layer="1"/>
+<wire x1="81.915" y1="64.704" x2="79.38" y2="64.704" width="0.3048" layer="1"/>
+<wire x1="79.38" y1="64.704" x2="79.375" y2="64.455" width="0.3048" layer="1"/>
 <wire x1="81.915" y1="66.995" x2="81.915" y2="64.704" width="0.3048" layer="1"/>
 </signal>
 <signal name="VUSB">
@@ -14920,7 +14952,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="36.515" y1="4.76" x2="38.1" y2="3.175" width="0.3048" layer="1"/>
 <wire x1="38.1" y1="3.175" x2="39.37" y2="3.175" width="0.3048" layer="1"/>
 </signal>
-<signal name="N$37">
+<signal name="USB_ASP_DPLUS_B">
 <contactref element="R19" pad="1"/>
 <contactref element="U4" pad="32"/>
 <contactref element="U4" pad="13"/>
@@ -14930,7 +14962,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="26.435" y1="12.935" x2="23.235" y2="16.135" width="0.3048" layer="1"/>
 <wire x1="23.235" y1="17.6276" x2="23.235" y2="16.135" width="0.3048" layer="1"/>
 </signal>
-<signal name="N$38">
+<signal name="USB_ASP_DMINUS_B">
 <contactref element="R18" pad="1"/>
 <contactref element="U4" pad="12"/>
 <wire x1="25.635" y1="9.0424" x2="25.635" y2="7.535" width="0.3048" layer="1"/>
@@ -15077,7 +15109,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="88.9" y1="39.37" x2="87.884" y2="40.386" width="0.3048" layer="1"/>
 <wire x1="87.884" y1="40.386" x2="87.884" y2="42.799" width="0.3048" layer="1"/>
 </signal>
-<signal name="FT-DPLUS">
+<signal name="USB_FT_DPLUS_B">
 <contactref element="C34" pad="1"/>
 <contactref element="U5" pad="16"/>
 <wire x1="19.2278" y1="46.609" x2="24.572" y2="46.609" width="0.3048" layer="1"/>
@@ -15086,7 +15118,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="26.022" y1="46.12" x2="25.574" y2="46.12" width="0.3048" layer="1"/>
 <wire x1="25.574" y1="46.12" x2="24.638" y2="47.056" width="0.3048" layer="1"/>
 </signal>
-<signal name="FT-DMINUS">
+<signal name="USB_FT_DMINUS_B">
 <contactref element="C33" pad="1"/>
 <contactref element="U5" pad="15"/>
 <wire x1="19.2278" y1="45.8216" x2="23.5814" y2="45.8216" width="0.3048" layer="1"/>
@@ -15095,13 +15127,13 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="26.022" y1="45.32" x2="25.193" y2="45.32" width="0.3048" layer="1"/>
 <wire x1="25.193" y1="45.32" x2="24.638" y2="44.892" width="0.3048" layer="1"/>
 </signal>
-<signal name="FT_DM">
+<signal name="USB_FT_DMINUS_A">
 <contactref element="U$21" pad="7"/>
 <contactref element="RN2" pad="3"/>
 <wire x1="29.165" y1="45.395" x2="27.647" y2="45.395" width="0.3048" layer="1"/>
 <wire x1="27.647" y1="45.395" x2="27.572" y2="45.32" width="0.3048" layer="1"/>
 </signal>
-<signal name="FT_DP">
+<signal name="USB_FT_DPLUS_A">
 <contactref element="U$21" pad="6"/>
 <contactref element="RN2" pad="4"/>
 <wire x1="29.165" y1="46.045" x2="27.647" y2="46.045" width="0.3048" layer="1"/>
@@ -15120,7 +15152,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="46.1899" y1="18.8849" x2="47.625" y2="20.32" width="0.254" layer="1"/>
 <wire x1="47.625" y1="22.445" x2="47.625" y2="20.32" width="0.254" layer="1"/>
 </signal>
-<signal name="DPLUS_ASP">
+<signal name="USB_ASP_DPLUS_A">
 <contactref element="D1" pad="C"/>
 <contactref element="R19" pad="2"/>
 <contactref element="U5" pad="12"/>
@@ -15138,7 +15170,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="24.765" y1="34.29" x2="26.035" y2="33.02" width="0.3048" layer="1"/>
 <wire x1="26.035" y1="33.02" x2="26.035" y2="29.845" width="0.3048" layer="1"/>
 </signal>
-<signal name="DMINUS_ASP">
+<signal name="USB_ASP_DMINUS_A">
 <contactref element="D2" pad="C"/>
 <contactref element="R18" pad="2"/>
 <contactref element="R17" pad="2"/>
@@ -15158,13 +15190,13 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="20.955" y1="3.81" x2="20.955" y2="3.175" width="0.3048" layer="1"/>
 <wire x1="20.955" y1="3.175" x2="21.27" y2="2.86" width="0.3048" layer="1"/>
 </signal>
-<signal name="DPLUS_HUB">
+<signal name="USB_HUB_DPLUS_A">
 <contactref element="U5" pad="1"/>
 <contactref element="RN1" pad="4"/>
 <wire x1="12.065" y1="39.4462" x2="12.065" y2="35.846" width="0.254" layer="1"/>
 <wire x1="12.065" y1="35.846" x2="12.046" y2="35.827" width="0.254" layer="1"/>
 </signal>
-<signal name="DMINUS_HUB">
+<signal name="USB_HUB_DMINUS_A">
 <contactref element="U5" pad="2"/>
 <contactref element="RN1" pad="3"/>
 <wire x1="12.8524" y1="39.4462" x2="12.8524" y2="35.8334" width="0.254" layer="1"/>
@@ -15234,7 +15266,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="17.653" y1="39.4462" x2="18.3388" y2="39.4462" width="0.3048" layer="1"/>
 <wire x1="18.3388" y1="39.4462" x2="19.05" y2="38.735" width="0.3048" layer="1"/>
 <contactref element="U$2" pad="7_VDDUSB"/>
-<wire x1="73.075" y1="62.7" x2="80.175" y2="62.7" width="0.254" layer="1"/>
 <wire x1="80.175" y1="62.7" x2="80.645" y2="62.23" width="0.254" layer="1"/>
 <via x="72.39" y="46.99" extent="1-16" drill="0.4572"/>
 <wire x1="80.645" y1="62.23" x2="80.645" y2="54.61" width="0.254" layer="1"/>
@@ -15325,8 +15356,13 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="17.272" y1="53.147" x2="16.703" y2="53.147" width="0.254" layer="1"/>
 <wire x1="16.703" y1="53.147" x2="16.371" y2="53.479" width="0.254" layer="1"/>
 <wire x1="16.871" y1="53.548" x2="17.272" y2="53.147" width="0.254" layer="1"/>
+<contactref element="C52" pad="1"/>
+<wire x1="73.075" y1="62.7" x2="77.112" y2="62.7" width="0.254" layer="1"/>
+<wire x1="77.112" y1="62.7" x2="77.343" y2="62.931" width="0.254" layer="1" curve="90"/>
+<wire x1="80.175" y1="62.7" x2="77.574" y2="62.7" width="0.254" layer="1"/>
+<wire x1="77.574" y1="62.7" x2="77.343" y2="62.931" width="0.254" layer="1" curve="-90"/>
 </signal>
-<signal name="TUSB_DMINUS_POSTRES">
+<signal name="USB_HUB_DMINUS_B">
 <contactref element="RN1" pad="2"/>
 <contactref element="CN1" pad="D-"/>
 <wire x1="86.741" y1="53.81" x2="84.925" y2="53.81" width="0.3048" layer="1"/>
@@ -15345,7 +15381,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="12.846" y1="32.239" x2="14.605" y2="30.48" width="0.3048" layer="1"/>
 <wire x1="14.605" y1="30.48" x2="15.875" y2="30.48" width="0.3048" layer="1"/>
 </signal>
-<signal name="TUSB_DPLUS_POSTRES">
+<signal name="USB_HUB_DPLUS_B">
 <contactref element="RN1" pad="1"/>
 <contactref element="CN1" pad="D+"/>
 <wire x1="86.741" y1="54.61" x2="83.185" y2="54.61" width="0.3048" layer="1"/>
@@ -15408,13 +15444,13 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="2.54" y1="48.895" x2="3.429" y2="48.006" width="0.254" layer="1"/>
 <wire x1="4.445" y1="48.006" x2="3.429" y2="48.006" width="0.254" layer="1"/>
 </signal>
-<signal name="CP_DMINUS_TI">
+<signal name="USB_CP_DMINUS_A">
 <contactref element="U5" pad="19"/>
 <contactref element="U$11" pad="4"/>
 <wire x1="15.871" y1="54.515" x2="15.871" y2="48.3656" width="0.254" layer="1"/>
 <wire x1="15.871" y1="48.3656" x2="16.0528" y2="48.1838" width="0.254" layer="1"/>
 </signal>
-<signal name="CP_DPLUS_TI">
+<signal name="USB_CP_DPLUS_A">
 <contactref element="U5" pad="20"/>
 <contactref element="U$11" pad="3"/>
 <wire x1="15.371" y1="54.515" x2="15.371" y2="48.2894" width="0.254" layer="1"/>
