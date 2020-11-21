@@ -8,11 +8,11 @@ EAGLE schematic and board for apa102 controller
 
 Top:
 
-![SVG of PCB top](./gerblook/b/top.svg)
+![PNG of PCB top](./gerblook/b/top.png)
 
 Bottom:
 
-![SVG of PCB bottom](./gerblook/b/bottom.svg)
+![PNG of PCB bottom](./gerblook/b/bottom.png)
 ***
 
 ## the schematic
