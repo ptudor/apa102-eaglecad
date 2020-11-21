@@ -12,7 +12,7 @@ Top:
 
 Bottom:
 
-![SVG of PCB bottom](./gerblook.org/b/bottom.svg)
+![PNG of PCB bottom](./gerblook.org/b/bottom.png)
 ***
 
 ## the schematic
