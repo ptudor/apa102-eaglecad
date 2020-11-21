@@ -4,6 +4,16 @@
 EAGLE schematic and board for apa102 controller
 
 ***
+## the board
+
+Top:
+
+![SVG of PCB top](./gerblook/b/top.svg)
+
+Bottom:
+
+![SVG of PCB bottom](./gerblook/b/bottom.svg)
+***
 
 ## the schematic
 
@@ -69,6 +79,3 @@ MCP9808
 
 ***
 
-## the board
-
-future image
